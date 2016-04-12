@@ -1,0 +1,24 @@
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://@127.0.0.1:27017/anizenApps');
+var conn = mongoose.connection;
+ 
+var user_schema = mongoose.Schema({}, {
+    strict: false,
+    collection: 'user'
+});
+var User = conn.model('user', user_schema);
+user_schema.methods.validPassword = function (password, cb) {
+    return this.model('User').findOne(
+            {
+                username: this.username,
+                password: password
+            },
+    function (err, row) {
+        if (row) {
+            cb(true);
+        } else {
+            cb(false);
+        }
+    });
+};
+ 

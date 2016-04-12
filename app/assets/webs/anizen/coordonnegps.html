@@ -1,0 +1,185 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta charset="utf-8">
+	<title>Portefeuilles numériques pour tous. Créez et distribuez des Duxy Cartees mobiles pour Duxiway Carte Wallet et tous les smartphones et tablettes.</title>
+	<meta name="author" content="Duxiway Carte">
+	<meta name="publisher" content="Duxiway Carte">
+	<meta name="description" content="Portefeuilles numériques pour tous. Avec Duxiway Carte Application, créez et distribuez des Cartees mobiles et communiquer avec les clients vua les smartphones et tablettes.">
+	<meta name="keywords" content="Cartebook, Carte, Wallet, Generator, Mobile, Store Card, Card, Coupon, Loyalty, Wallet, Fidélité, Carte,  Barcode, GPS">
+
+	<link rel="shortcut icon" type="image/png" href="https://pass.duxiway.com/images/favicon.png">
+
+	<link href="./css/bootstrap.css" rel="stylesheet" media="screen">
+
+	<link rel="stylesheet" href="./css/frontstyle.css" type="text/css">
+	<link href="./css/css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="./css/jquery-ui.css" type="text/css">
+
+
+	
+	<script type="text/javascript" async="" src="./js/ga.js"></script>
+	<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+	<script src="./js/bootstrap222.min.js"></script>
+
+	<!--
+	<script type="text/javascript" async="" src="./js/ga.js"></script>
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+
+	  _gaq.push(['_setAccount', '......']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+	-->
+</head>
+
+<body class="tools">
+	<div id="account_actions" class="panel_login"><div id="infoBoxLogin"></div></div>
+
+  	<div id="wrap">
+
+	  		  <div class="nav-container">
+			<nav class="navbar">
+				<div class="navbar-inner">
+					<div class="container">
+					<!--
+						<a href="./DuxiWay_files/DuxiWay.html" class="brand"><img src="./images/logoAnizenCarte.png" data-at2x="/images/logoAnizenCarte.png" alt="Duxiway Carte" width="80"></a>
+-->
+						<div class="nav-collapse">
+							
+							<ul class="nav actions">
+								<li><a href="inscription.html"><i class="fa fa-pencil"></i> Inscription</a></li>
+								</ul>
+							
+							<ul class="nav">
+								<li><a href="./index.html">Acceuil</a></li>							
+								<li><a href="./pricing.html">Tarifs</a></li>
+								<li><a href="./contactus.html">Contact</a></li>
+								<li class="dropdown">
+									<a id="drop1" role="button" class="dropdown-toggle" data-toggle="dropdown">Plus <b class="caret"></b></a>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+										<li role="presentation"><a role="menuitem" tabindex="-1" href="./codebarres..html">Générateur de code-barres</a></li>
+										<li role="presentation"><a role="menuitem" tabindex="-1" href="./coordonnegps.html">Générateur de coordonnées GPS</a></li>
+										<li role="presentation"><a role="menuitem" tabindex="-1" href="./conditiondutilisation.html">Mention légale</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</nav>
+		</div>
+
+<div class="container">
+
+	<div class="row">
+		<div class="span12">
+			<hgroup class="frontpage_heading">
+				<h1><i class="fa fa-compass" style="font-size: 2em;vertical-align: middle;margin-right: 20px;"></i> Générateur de coordonnées GPS</h1>
+			</hgroup>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="span12 white-panel no-padding">
+			<div class="padding-mid">
+				<form class="form-inline">
+					<input type="text" id="address" class="input-xlarge" placeholder="Indiquez un lieu" autocomplete="off">
+					<input type="text" id="lat" placeholder="Latitude" readonly="readonly">
+					<input type="text" id="lng" placeholder="Longitude" readonly="readonly">
+					<button class="btn" id="showOnMap">Afficher</button>
+				</form>					
+			</div>
+			<div class="standout_map">
+				<div id="map_canvas" style="width: 100%; height: 300px; position: relative; overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 200px; top: -42px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 200px; top: 214px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 456px; top: -42px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 456px; top: 214px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -56px; top: -42px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -56px; top: 214px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 712px; top: -42px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 712px; top: 214px;"></div></div></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="transform: translateZ(0px); position: absolute; left: 200px; top: 214px; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="./coordonnegps_files/vt" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="transform: translateZ(0px); position: absolute; left: 200px; top: -42px; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="./coordonnegps_files/vt(1)" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="transform: translateZ(0px); position: absolute; left: 456px; top: -42px; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="./coordonnegps_files/vt(2)" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="transform: translateZ(0px); position: absolute; left: 456px; top: 214px; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="./coordonnegps_files/vt(3)" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="transform: translateZ(0px); position: absolute; left: -56px; top: -42px; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="./coordonnegps_files/vt(4)" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="transform: translateZ(0px); position: absolute; left: -56px; top: 214px; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="./coordonnegps_files/vt(5)" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="transform: translateZ(0px); position: absolute; left: 712px; top: -42px; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="./coordonnegps_files/vt(6)" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="transform: translateZ(0px); position: absolute; left: 712px; top: 214px; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="./coordonnegps_files/vt(7)" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div><div style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 319px; top: 60px; background-color: white;"><div style="padding: 0px 0px 10px; font-size: 16px;">Données cartographiques</div><div style="font-size: 13px;">Données cartographiques ©2016 Google, INEGI</div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img src="./coordonnegps_files/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 113px; bottom: 0px; width: 223px;"><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Données cartographiques</a><span style="">Données cartographiques ©2016 Google, INEGI</span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Données cartographiques ©2016 Google, INEGI</div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; -webkit-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/fr-FR_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Conditions d'utilisation</a></div></div><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px; display: none; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_new" title="Signaler à Google une erreur dans la carte routière ou les images" href="https://www.google.com/maps/@48.8811,2.36209,3z/data=!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Signaler une erreur cartographique</a></div></div><div class="gmnoprint" draggable="false" controlwidth="28" controlheight="55" style="margin: 10px; -webkit-user-select: none; position: absolute; bottom: 81px; left: 0px;"><div class="gmnoprint" controlwidth="28" controlheight="55" style="position: absolute; left: 0px; top: 0px;"><div draggable="false" style="-webkit-user-select: none; -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; width: 28px; height: 55px; background-color: rgb(255, 255, 255);"><div title="Zoom avant" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="./coordonnegps_files/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div><div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; top: 0px; background-color: rgb(230, 230, 230);"></div><div title="Zoom arrière" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="./coordonnegps_files/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: -15px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div></div></div></div><div class="gmnoprint" draggable="false" controlwidth="0" controlheight="0" style="margin: 10px; -webkit-user-select: none; position: absolute; display: none; bottom: 14px; right: 0px;"><div class="gmnoprint" controlwidth="28" controlheight="0" style="display: none; position: absolute;"><div title="Faire pivoter le plan à 90°" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; cursor: pointer; display: none; background-color: rgb(255, 255, 255);"><img src="./coordonnegps_files/tmapctrl4.png" draggable="false" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div class="gm-tilt" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);"><img src="./coordonnegps_files/tmapctrl4.png" draggable="false" style="position: absolute; left: -141px; top: -13px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" href="https://maps.google.com/maps?ll=48.8811,2.36209&z=3&t=m&hl=fr-FR&gl=US&mapclient=apiv3" title="Cliquez ici pour afficher cette zone sur Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img src="./coordonnegps_files/google4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div></div></div>
+			</div>
+			
+		</div>
+	</div>
+
+
+</div>
+
+<script type="text/javascript" src="./coordonnegps_files/js"></script>
+<script type="text/javascript" src="./coordonnegps_files/application-front.js"></script>
+<script type="text/javascript">
+var map = false;
+var marker;
+var markers = [];
+
+function init_map() {
+	if(map == false) {
+		var mapOptions = {
+			zoom: 3,
+			center: new google.maps.LatLng(48.8811, 2.36209),
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			mapTypeControl: false,
+			scrollwheel: false,
+			streetViewControl: false,
+			panControl: false,
+			zoomControlOptions: {
+				position: google.maps.ControlPosition.LEFT_BOTTOM
+			}
+		};
+		
+		map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+		geocodingHandler(
+			document.getElementById('address'),
+			document.getElementById('lat'),
+			document.getElementById('lng')
+		);
+	}
+}
+
+function AutoCenter() {
+	var bounds = new google.maps.LatLngBounds();
+	$.each(markers, function (index, marker) {
+		bounds.extend(marker.position);
+	});
+	map.fitBounds(bounds);
+}
+
+$(function(){
+	init_map();
+})
+
+$('#showOnMap').click(function(e){
+	e.preventDefault();
+	if( $('#lat').val() != '' ) {
+		marker = new google.maps.Marker({
+			position: new google.maps.LatLng($('#lat').val(), $('#lng').val()),
+			map: map,
+			icon : 'https://maps.google.com/mapfiles/ms/icons/red-dot.png',
+			title: $('#address').val()
+		});
+		
+		markers.push(marker);
+	
+		AutoCenter();
+	}
+	
+	return false;
+})
+
+
+    
+<script type="text/javascript">
+function validateEmail(email) { 
+var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+return re.test(email);
+} 
+</script>
+<script type="text/javascript" src="./coordonnegps_files/retina.js"></script>
+
+
+
+
+
+<div class="pac-container pac-logo" style="display: none;"></div></body></html>

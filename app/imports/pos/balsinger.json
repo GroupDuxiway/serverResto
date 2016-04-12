@@ -1,0 +1,36 @@
+[{
+	"email": "pos12345@gmail.com",
+	"phone": "12345678",
+	"address":   { 
+		"facebook":  "www.facebook.com",
+		"vk": "www.vk.com",
+		"twitter": "www.twitter.com",
+		"anizen": "www.anizen.com"
+	},
+	"address":   { 
+		"street":  "",
+		"number": "50",
+		"city": "Paris",
+		"country": "France"
+	},
+	"company":   { 
+		"name":  "Anizen",
+		"siren": "123456"
+	},		
+	"gps":   { 
+		"latitude":  "0",
+		"longitude": "0"
+	},	
+	"contact":  { 
+		"first": "Alain",
+		"last": "Dupont"
+	},
+	"logo":  { 
+		"name": "Balsinger",
+		"label": "Restarant rapide"
+	},
+	"datas": [{ "key": "Special", "value": "VAlues::::"}]
+
+}
+
+]

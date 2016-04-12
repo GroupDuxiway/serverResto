@@ -1,0 +1,52 @@
+// The Thread model
+
+var fs = require("fs");
+var path = require('path');
+
+
+var file = path.join(__dirname, '../data/users.json');
+
+exports.list = function (res) {
+	fs.exists(file, function(fileok){
+	  if(fileok)fs.readFile(file, function(error, data) {
+		console.log("Contents: " + data);
+         res.end(data);
+	  });
+	  else {console.log("file not found");   res.end({})};
+	});
+};
+
+exports.get = function (id,res) {
+   // First read existing users.
+   fs.readFile( file, 'utf8', function (err, data) {
+       users = JSON.parse( data );
+       var user = users["user" + id] 
+       console.log( user );
+       res.end(JSON.stringify(user));
+   });
+   
+};
+
+
+
+
+exports.add = function (user,res) {
+   // First read existing users.
+   fs.readFile(file, 'utf8', function (err, data) {
+       data = JSON.parse( data );
+       data["user4"] = user;
+       console.log( data );
+       res.end( JSON.stringify(data));
+   });
+};
+
+exports.remove = function (id,res) {
+   // First read existing users.
+   fs.readFile(file, 'utf8', function (err, data) {
+       data = JSON.parse( data );
+       delete data["user" + id];
+       
+       console.log( data );
+       res.end(JSON.stringify(data));
+   });
+};

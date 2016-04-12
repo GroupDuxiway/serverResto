@@ -1,0 +1,12 @@
+[{
+  
+   "content":  {"data":"content"},
+  "advertising": [{ "key": "PUB1", "value": {"data":"content"}}],
+   "versionId": "0",
+   "type":"hrc",
+   "datas":[{"key":"test","value":"values"}]
+
+}
+
+]
+   
