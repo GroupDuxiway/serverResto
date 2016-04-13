@@ -1,0 +1,224 @@
+*************Hello World app
+[34mRunning app as a module[0m
+
+
+Express server listening on port 12345[0m
+  Test User Application
+Wed, 24 Feb 2016 17:42:18 GMT Database connected 
+start suite User test Application
+[0mGET / [33m404 [0m3.741 ms - -[0m
+    √ check /
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : User
+[0mGET /api/user/remove?key=1234567890 [32m200 [0m43.237 ms - 37[0m
+    √ user remove email (54ms)
+teardown suite user test Application
+start suite User test Application
+Initialization UserController
+[0mGET /api/user/apply?key=1234567890 [32m200 [0m33.913 ms - 203[0m
+************** {"success":true,"extras":{"data":{"email":"neeno12345@gmail.com","alias":"unittest","secretKey":"W3DHHNRDC","tokenId":"ac5e5aa8-f4d4-4166-b60c-b4eecd2d875d","anizenId":["USR-7075-9608-7625-3467-2015"]}}}
+    √ user add user (40ms)
+teardown suite user test Application
+start suite User test Application
+************** USER ID : USR-7075-9608-7625-3467-2015
+==> Initialization Data Controler  : User
+[0mGET /api/user/search?key=1234567890 [32m200 [0m6.461 ms - 403[0m
+    √ user get by email
+teardown suite user test Application
+start suite User test Application
+************** USER ID : USR-7075-9608-7625-3467-2015
+==> Initialization Data Controler  : User
+[0mGET /api/user/search?key=1234567890 [32m200 [0m4.425 ms - 403[0m
+    √ user get by tokenId
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : User
+[0mGET /api/user/search?key=1234567890 [32m200 [0m3.309 ms - 403[0m
+    √ user get by tokenId and secretKey
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : User
+[0mGET /api/user/update?key=1234567890 [32m200 [0m6.634 ms - 403[0m
+    √ user update by token id and secret id
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : User
+[0mGET /api/user/update?key=1234567890 [32m200 [0m3.351 ms - 399[0m
+==> Initialization Data Controler  : User
+[0mGET /api/user/search?key=1234567890 [32m200 [0m3.483 ms - 397[0m
+    √ user status => activ 
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : User
+[0mGET /api/user/update?key=1234567890 [32m200 [0m3.166 ms - 397[0m
+==> Initialization Data Controler  : User
+[0mGET /api/user/search?key=1234567890 [32m200 [0m3.555 ms - 398[0m
+    √ user status => remove 
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : User
+[0mGET /api/user/update?key=1234567890 [32m200 [0m2.882 ms - 398[0m
+==> Initialization Data Controler  : User
+[0mGET /api/user/search?key=1234567890 [32m200 [0m5.201 ms - 397[0m
+************** {"success":true,"extras":{"data":{"_id":"56cdeb7ada7875d0217fb49a","email":"neeno12345@gmail.com","alias":"NINO","secretKey":"W3DHHNRDC","tokenId":"ac5e5aa8-f4d4-4166-b60c-b4eecd2d875d","anizenId":"USR-7075-9608-7625-3467-2015","__v":0,"activationDate":"2016-02-24T17:42:18.533Z","applyDate":"2016-02-24T17:42:18.533Z","lastConnectionDate":"2016-02-24T17:42:18.532Z","status":"block","datas":[]}}}
+    √ user status => block 
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : User
+[0mGET /api/user/update?key=1234567890 [32m200 [0m6.403 ms - 397[0m
+==> Initialization Data Controler  : User
+[0mGET /api/user/search?key=1234567890 [32m200 [0m3.118 ms - 360[0m
+    √ user status => pending 
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : Pos
+[0mGET /api/pos/remove?key=1234567890 [32m200 [0m2.680 ms - 37[0m
+    √ POS remove by email
+teardown suite user test Application
+start suite User test Application
+Initialization PosController
+[0mGET /api/pos/apply?key=1234567890 [32m200 [0m14.006 ms - 512[0m
+    √  add POS
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : PosMembershipCard
+[0mGET /api/pos/addCard?key=1234567890 [32m200 [0m7.095 ms - 194[0m
+    √  add Card POS
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : Pos
+[0mGET /api/user/searchPos?key=1234567890 [32m200 [0m5.324 ms - 736[0m
+************** {"setting":{"page_size":10,"N":1,"sort":{"_id":1},"current_id":0},"query":{}}
+    √ user get list of POS
+teardown suite user test Application
+start suite User test Application
+Initialization Membership Controller
+[0mGET /api/user/applyMembership?key=1234567890 [32m200 [0m6.058 ms - 402[0m
+************** {"userId":["USR-7075-9608-7625-3467-2015"],"posId":["POS-4224-5765-8874-2104-2015"],"card":{"name":"VIP","posId":["POS-4224-5765-8874-2104-2015"],"logo":{"name":"Balsinger","label":"Restarant rapide"},"datas":[{"key":"Special","value":"VAlues::::"}]},"status":"request","name":{"first":"ALain","last":"Dupont"},"membershipId":"Q3Z8H7NR8J","activationId":"QKA8H7NRDJ"}
+    √ user apply as member of POS
+teardown suite user test Application
+start suite User test Application
+************** DATA{"setting":{"page_size":10,"N":1,"sort":{"_id":1},"current_id":0},"query":{"userId":["USR-7075-9608-7625-3467-2015"],"status":{"$in":["request","reject","validation"]}}}
+==> Initialization Data Controler  : Membership
+[0mGET /api/user/searchMembership?key=1234567890 [32m200 [0m6.469 ms - 2622[0m
+************** [{"_id":"56cca4bcfa574ef41eb71387","posId":"POS-6766-3006-2504-1070-2015","card":[{"_id":"56cca4bcfa574ef41eb71383","email":"pos12345@gmail.com","phone":"12345678","secretKey":"QKC4N57FDC","tokenId":"97bfaeb5-864a-482a-beca-aa4bbd05d052","anizenId":"POS-6766-3006-2504-1070-2015","__v":0,"activationDate":"2016-02-23T18:28:12.349Z","applyDate":"2016-02-23T18:28:12.349Z","lastConnectionDate":"2016-02-23T18:28:12.349Z","status":"pending","datas":[{"key":"Special","value":"VAlues::::","_id":"56cca4bcfa574ef41eb71384"}],"logo":{"name":"Balsinger","label":"Restarant rapide"},"contact":{"first":"Alain","last":"Dupont"},"gps":{"x":"0","y":"0"},"company":{"name":"Anizen","siren":"123456","phone":"0659273701"},"address":{"street":"","number":"50","city":"Paris","country":"France"}}],"membershipId":"W3Y4N57PDJ","__v":0,"datas":[],"activationDate":"2016-02-23T18:28:12.387Z","applyDate":"2016-02-23T18:28:12.387Z","lastConnectionDate":"2016-02-23T18:28:12.387Z","status":"activ","name":{"first":"ALain","last":"Dupont"}},{"_id":"56cca4e90ee1e1ec009836de","posId":"POS-2204-0664-5734-2781-2015","card":[{"_id":"56cca4e90ee1e1ec009836da","email":"pos12345@gmail.com","phone":"12345678","secretKey":"W3HYQ7FDC","tokenId":"d68fdf88-09d2-4f09-acc5-6c99caf6b30f","anizenId":"POS-2204-0664-5734-2781-2015","__v":0,"activationDate":"2016-02-23T18:28:57.169Z","applyDate":"2016-02-23T18:28:57.169Z","lastConnectionDate":"2016-02-23T18:28:57.169Z","status":"pending","datas":[{"key":"Special","value":"VAlues::::","_id":"56cca4e90ee1e1ec009836db"}],"logo":{"name":"Balsinger","label":"Restarant rapide"},"contact":{"first":"Alain","last":"Dupont"},"gps":{"x":"0","y":"0"},"company":{"name":"Anizen","siren":"123456","phone":"0659273701"},"address":{"street":"","number":"50","city":"Paris","country":"France"}}],"membershipId":"QKCHZWHF8J","__v":0,"datas":[],"activationDate":"2016-02-23T18:28:57.208Z","applyDate":"2016-02-23T18:28:57.208Z","lastConnectionDate":"2016-02-23T18:28:57.208Z","status":"request","name":{"first":"ALain","last":"Dupont"}},{"_id":"56cdeb7ada7875d0217fb49f","userId":"USR-7075-9608-7625-3467-2015","posId":"POS-4224-5765-8874-2104-2015","card":{"name":"VIP","posId":["POS-4224-5765-8874-2104-2015"],"logo":{"name":"Balsinger","label":"Restarant rapide"},"datas":[{"key":"Special","value":"VAlues::::"}]},"membershipId":"Q3Z8H7NR8J","activationId":"QKA8H7NRDJ","__v":0,"datas":[],"activationDate":"2016-02-24T17:42:18.708Z","applyDate":"2016-02-24T17:42:18.708Z","lastConnectionDate":"2016-02-24T17:42:18.708Z","status":"request","name":{"first":"ALain","last":"Dupont"}}]
+    √ user get pending request membership
+teardown suite user test Application
+start suite User test Application
+Initialization Membership Controller
+[0mGET /api/user/activatMembership?key=1234567890 [32m200 [0m4.257 ms - 581[0m
+    √ user activate member CARD with activation id
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : Membership
+[0mGET /api/user/searchMembership?key=1234567890 [32m200 [0m8.102 ms - 2620[0m
+************** [{"_id":"56cca4bcfa574ef41eb71387","posId":"POS-6766-3006-2504-1070-2015","card":[{"_id":"56cca4bcfa574ef41eb71383","email":"pos12345@gmail.com","phone":"12345678","secretKey":"QKC4N57FDC","tokenId":"97bfaeb5-864a-482a-beca-aa4bbd05d052","anizenId":"POS-6766-3006-2504-1070-2015","__v":0,"activationDate":"2016-02-23T18:28:12.349Z","applyDate":"2016-02-23T18:28:12.349Z","lastConnectionDate":"2016-02-23T18:28:12.349Z","status":"pending","datas":[{"key":"Special","value":"VAlues::::","_id":"56cca4bcfa574ef41eb71384"}],"logo":{"name":"Balsinger","label":"Restarant rapide"},"contact":{"first":"Alain","last":"Dupont"},"gps":{"x":"0","y":"0"},"company":{"name":"Anizen","siren":"123456","phone":"0659273701"},"address":{"street":"","number":"50","city":"Paris","country":"France"}}],"membershipId":"W3Y4N57PDJ","__v":0,"datas":[],"activationDate":"2016-02-23T18:28:12.387Z","applyDate":"2016-02-23T18:28:12.387Z","lastConnectionDate":"2016-02-23T18:28:12.387Z","status":"activ","name":{"first":"ALain","last":"Dupont"}},{"_id":"56cca4e90ee1e1ec009836de","posId":"POS-2204-0664-5734-2781-2015","card":[{"_id":"56cca4e90ee1e1ec009836da","email":"pos12345@gmail.com","phone":"12345678","secretKey":"W3HYQ7FDC","tokenId":"d68fdf88-09d2-4f09-acc5-6c99caf6b30f","anizenId":"POS-2204-0664-5734-2781-2015","__v":0,"activationDate":"2016-02-23T18:28:57.169Z","applyDate":"2016-02-23T18:28:57.169Z","lastConnectionDate":"2016-02-23T18:28:57.169Z","status":"pending","datas":[{"key":"Special","value":"VAlues::::","_id":"56cca4e90ee1e1ec009836db"}],"logo":{"name":"Balsinger","label":"Restarant rapide"},"contact":{"first":"Alain","last":"Dupont"},"gps":{"x":"0","y":"0"},"company":{"name":"Anizen","siren":"123456","phone":"0659273701"},"address":{"street":"","number":"50","city":"Paris","country":"France"}}],"membershipId":"QKCHZWHF8J","__v":0,"datas":[],"activationDate":"2016-02-23T18:28:57.208Z","applyDate":"2016-02-23T18:28:57.208Z","lastConnectionDate":"2016-02-23T18:28:57.208Z","status":"request","name":{"first":"ALain","last":"Dupont"}},{"_id":"56cdeb7ada7875d0217fb49f","userId":"USR-7075-9608-7625-3467-2015","posId":"POS-4224-5765-8874-2104-2015","card":{"name":"VIP","posId":["POS-4224-5765-8874-2104-2015"],"logo":{"name":"Balsinger","label":"Restarant rapide"},"datas":[{"key":"Special","value":"VAlues::::"}]},"membershipId":"Q3Z8H7NR8J","activationId":"QKA8H7NRDJ","__v":0,"datas":[],"activationDate":"2016-02-24T17:42:18.708Z","applyDate":"2016-02-24T17:42:18.708Z","lastConnectionDate":"2016-02-24T17:42:18.708Z","status":"activ","name":{"first":"ALain","last":"Dupont"}}]
+    √ user get  memberships
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : Order
+[0mGET /api/user/putOrder?key=1234567890 [32m200 [0m5.137 ms - 152[0m
+******* user send order ==> {"status":"send","content":{"data":"hhhhh"},"datas":[{"key":"changereason","value":"values"}],"orderId":"QKXDH7N6DJ"}
+    √ user send order 
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : Order
+[0mGET /api/user/updateOrder?key=1234567890 [32m200 [0m5.694 ms - 347[0m
+    √ user cancel order 
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : Order
+[0mGET /api/user/updateOrder?key=1234567890 [32m200 [0m3.316 ms - 404[0m
+    √ user change date order 
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : Order
+[0mGET /api/user/searchOrders?key=1234567890 [32m200 [0m31.668 ms - 10151[0m
+************** [{"_id":"56cdba8c61eae7e834cdfeb4","userId":"USR-0851-6802-4042-5004-2015","posId":"POS-3216-1729-1147-3328-2015","__v":0,"datas":[],"createDate":"2016-02-24T14:13:32.402Z","updateDate":"2016-02-24T14:13:32.402Z","meetingDate":"2016-02-24T17:42:18.785Z","status":"pending"},{"_id":"56cdbc5500bd13c82a4bce1f","userId":"USR-9295-8651-9940-1296-2015","posId":"POS-9532-8830-6878-0468-2015","orderId":"QK5FTDDRDC","__v":0,"datas":[],"createDate":"2016-02-24T14:21:09.078Z","updateDate":"2016-02-24T14:21:09.078Z","meetingDate":"2016-02-24T17:42:18.786Z","status":"send"},{"_id":"56cdbd7ec6e5f1a00cd0485c","userId":"USR-7893-2793-0604-6196-2015","posId":"POS-2679-8707-1132-6756-2015","orderId":"W3X3D9868C","__v":0,"datas":[],"createDate":"2016-02-24T14:26:06.458Z","updateDate":"2016-02-24T14:26:06.458Z","meetingDate":"2016-02-24T17:42:18.787Z","status":"send"},{"_id":"56cdbdc3875132383503d3cc","userId":"USR-3635-9204-9726-8620-2015","posId":"POS-4285-4769-2913-9855-2015","orderId":"Q3XWKEDRDJ","__v":0,"datas":[],"createDate":"2016-02-24T14:27:15.623Z","updateDate":"2016-02-24T14:27:15.623Z","meetingDate":"2016-02-24T17:42:18.787Z","status":"send"},{"_id":"56cdc25038fe1eec1fd38c03","orderId":"WKSYTZ96DJ","__v":0,"datas":[],"createDate":"2016-02-24T14:46:40.302Z","updateDate":"2016-02-24T14:46:40.302Z","meetingDate":"2016-02-24T17:42:18.788Z","status":"cancel"},{"_id":"56cdc445acca92a41490bce0","content":{"data":"hhhhh"},"orderId":"WK6U5L68J","__v":0,"datas":[],"createDate":"2016-02-24T14:55:01.131Z","updateDate":"2016-02-24T14:55:01.131Z","meetingDate":"2016-02-24T17:42:18.788Z","status":"send"},{"_id":"56cdc4bae31853e4055f841f","content":{"data":"hhhhh"},"orderId":"WKXDNXLRDJ","__v":0,"datas":[],"createDate":"2016-02-24T14:56:58.375Z","updateDate":"2016-02-24T14:56:58.375Z","meetingDate":"2016-02-24T17:42:18.789Z","status":"send"},{"_id":"56cdc51ab024b4281f45a9a3","content":{"data":"hhhhh"},"orderId":"Q357WW968C","__v":0,"datas":[],"createDate":"2016-02-24T14:58:34.089Z","updateDate":"2016-02-24T14:58:34.089Z","meetingDate":"2016-02-24T17:42:18.789Z","status":"send"},{"_id":"56cdc5b80b478b18095eb0dc","content":{"data":"hhhhh"},"orderId":"WK5B2W96DJ","__v":0,"datas":[],"createDate":"2016-02-24T15:01:12.724Z","updateDate":"2016-02-24T15:01:12.724Z","meetingDate":"2016-02-24T17:42:18.790Z","status":"cancel","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cdc7178756988c14fc7905","content":{"data":"hhhhh"},"orderId":"WK5VW6968C","__v":0,"datas":[],"createDate":"2016-02-24T15:07:03.525Z","updateDate":"2016-02-24T15:07:03.525Z","meetingDate":"2016-02-24T15:07:03.525Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cdc78c5b76f3a0101a706b","content":{"data":"hhhhh"},"orderId":"QKXE86L68J","__v":0,"datas":[],"createDate":"2016-02-24T15:09:00.577Z","updateDate":"2016-02-24T15:09:00.577Z","meetingDate":"2016-02-24T15:09:00.577Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cdc90c754942801b89cc8b","content":{"data":"hhhhh"},"orderId":"QK595TL68C","__v":0,"datas":[],"createDate":"2016-02-24T15:15:24.012Z","updateDate":"2016-02-24T15:15:24.012Z","meetingDate":"2016-02-24T15:15:24.012Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cdc9992573b2f4163425bd","content":{"data":"hhhhh"},"orderId":"Q35HLV9RDC","__v":0,"datas":[],"createDate":"2016-02-24T15:17:45.403Z","updateDate":"2016-02-24T15:17:45.403Z","meetingDate":"2016-02-24T15:17:45.403Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cdc9d4c829df481c1c2677","content":{"data":"hhhhh"},"orderId":"QKYFCBLRDC","__v":0,"datas":[],"createDate":"2016-02-24T15:18:44.161Z","updateDate":"2016-02-24T15:18:44.161Z","meetingDate":"2016-02-24T15:18:44.161Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cdcd0096010ee40a7c6db4","content":{"data":"hhhhh"},"orderId":"WK5Z5LL68C","__v":0,"datas":[],"createDate":"2016-02-24T15:32:16.836Z","updateDate":"2016-02-24T15:32:16.836Z","meetingDate":"2016-02-24T15:32:16.836Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cdcd67361dc1f41bfe6807","content":{"data":"hhhhh"},"orderId":"WKXTB9LRDC","__v":0,"datas":[],"createDate":"2016-02-24T15:33:59.578Z","updateDate":"2016-02-24T15:33:59.578Z","meetingDate":"2016-02-24T15:33:59.577Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cdd9ef944132941f790bd0","content":{"data":"hhhhh"},"orderId":"QK5JSB46DJ","__v":0,"datas":[],"createDate":"2016-02-24T16:27:27.862Z","updateDate":"2016-02-24T16:27:27.862Z","meetingDate":"2016-02-24T16:27:27.862Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cdda48f0a982cc1f5deb7f","content":{"data":"hhhhh"},"orderId":"QK5VGM468C","__v":0,"datas":[],"createDate":"2016-02-24T16:28:56.020Z","updateDate":"2016-02-24T16:28:56.020Z","meetingDate":"2016-02-24T16:28:56.020Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cdde83499202301f3d3b63","content":{"data":"hhhhh"},"orderId":"QKXWD446DC","__v":0,"datas":[],"createDate":"2016-02-24T16:46:59.651Z","updateDate":"2016-02-24T16:46:59.651Z","meetingDate":"2016-02-24T16:46:59.651Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cde084f2e1764002c3b326","content":{"data":"hhhhh"},"orderId":"W3XFDK268J","__v":0,"datas":[],"createDate":"2016-02-24T16:55:32.659Z","updateDate":"2016-02-24T16:55:32.659Z","meetingDate":"2016-02-24T16:55:32.659Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cde0d34332cf980dd3fb15","content":{"data":"hhhhh"},"orderId":"W3XWJCNR8J","__v":0,"datas":[],"createDate":"2016-02-24T16:56:51.700Z","updateDate":"2016-02-24T16:56:51.700Z","meetingDate":"2016-02-24T16:56:51.700Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cde12a08c56a6420da7a02","content":{"data":"hhhhh"},"orderId":"WKDFC2RDC","__v":0,"datas":[],"createDate":"2016-02-24T16:58:18.126Z","updateDate":"2016-02-24T16:58:18.126Z","meetingDate":"2016-02-24T16:58:18.126Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cde3a99fa822a40f007628","content":{"data":"hhhhh"},"orderId":"WK5HES26DC","__v":0,"datas":[],"createDate":"2016-02-24T17:08:57.355Z","updateDate":"2016-02-24T17:08:57.355Z","meetingDate":"2016-02-24T17:08:57.355Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cde4353377fa981a426c5d","content":{"data":"hhhhh"},"orderId":"W3XR65N6DC","__v":0,"datas":[],"createDate":"2016-02-24T17:11:17.818Z","updateDate":"2016-02-24T17:11:17.818Z","meetingDate":"2016-02-24T17:11:17.818Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cde47a662ea750237cce2c","content":{"data":"hhhhh"},"orderId":"WKXD7X2R8C","__v":0,"datas":[],"createDate":"2016-02-24T17:12:26.844Z","updateDate":"2016-02-24T17:12:26.844Z","meetingDate":"2016-02-24T17:12:26.844Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cde4cc9fc9368c13b92fea","content":{"data":"hhhhh"},"orderId":"W3XE3Q268C","__v":0,"datas":[{"key":"changereason","value":"values","_id":"56cde4cc9fc9368c13b92feb"}],"createDate":"2016-02-24T17:13:48.885Z","updateDate":"2016-02-24T17:13:48.885Z","meetingDate":"2016-02-24T17:13:48.885Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cde64b0b354d4c1fea1a73","content":{"data":"hhhhh"},"orderId":"WKSLUF2R8C","__v":0,"datas":[{"key":"changereason","value":"values","_id":"56cde64b0b354d4c1fea1a74"}],"createDate":"2016-02-24T17:20:11.258Z","updateDate":"2016-02-24T17:20:11.258Z","meetingDate":"2016-02-24T17:20:11.258Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cde696c5783520080517d2","content":{"data":"hhhhh"},"orderId":"QK5G9F2RDC","__v":0,"datas":[{"key":"changereason","value":"values","_id":"56cde696c5783520080517d3"}],"createDate":"2016-02-24T17:21:26.643Z","updateDate":"2016-02-24T17:21:26.642Z","meetingDate":"2016-02-24T17:21:26.642Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cde7731d08af3819a7bfd0","content":{"data":"hhhhh"},"orderId":"WK5Q76NRDJ","__v":0,"datas":[{"key":"changereason","value":"values","_id":"56cde7731d08af3819a7bfd1"}],"createDate":"2016-02-24T17:25:07.623Z","updateDate":"2016-02-24T17:25:07.623Z","meetingDate":"2016-02-24T17:25:07.623Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cdea6c2fb0df042374a0ed","content":{"data":"hhhhh"},"orderId":"W3X4BM268C","__v":0,"datas":[{"key":"changereason","value":"values","_id":"56cdea6c2fb0df042374a0ee"}],"createDate":"2016-02-24T17:37:48.868Z","updateDate":"2016-02-24T17:37:48.868Z","meetingDate":"2016-02-24T17:37:48.868Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cdea9a477690ec05999b1c","content":{"data":"hhhhh"},"orderId":"QKX89M2R8J","__v":0,"datas":[{"key":"changereason","value":"values","_id":"56cdea9a477690ec05999b1d"}],"createDate":"2016-02-24T17:38:34.763Z","updateDate":"2016-02-24T17:38:34.763Z","meetingDate":"2016-02-24T17:38:34.763Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cdeb53fd3dade422578118","content":{"data":"hhhhh"},"orderId":"QK5QTH2R8C","__v":0,"datas":[{"key":"changereason","value":"values","_id":"56cdeb53fd3dade422578119"}],"createDate":"2016-02-24T17:41:39.700Z","updateDate":"2016-02-24T17:41:39.700Z","meetingDate":"2016-02-24T17:41:39.700Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}},{"_id":"56cdeb7ada7875d0217fb4a0","content":{"data":"hhhhh"},"orderId":"QKXDH7N6DJ","__v":0,"datas":[{"key":"changereason","value":"values","_id":"56cdeb7ada7875d0217fb4a1"}],"createDate":"2016-02-24T17:42:18.751Z","updateDate":"2016-02-24T17:42:18.751Z","meetingDate":"2016-02-24T17:42:18.751Z","status":"change","reason":{"message":"RETARD 2H","reasontype":"RETARD"}}]
+    √ user search change order status
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : Message
+[0mGET /api/user/sendMessage?key=1234567890 [32m200 [0m5.925 ms - 280[0m
+**************  'user send new thread/messageccon a ORDER {"success":true,"extras":{"data":{"fromId":["USR-7075-9608-7625-3467-2015"],"toId":["POS-4224-5765-8874-2104-2015"],"orderId":"QKXDH7N6DJ","content":"contenu message","type":"Order","status":"send","read":false,"datas":[{"key":"test","value":"values"}],"messageId":"W3WD77N6DJ"}}}
+    √ USER send new thread/messageccon a ORDER 
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : Message
+[0mGET /api/user/sendMessage?key=1234567890 [32m200 [0m10.297 ms - 280[0m
+**************  'user send new thread/messageccon a ORDER {"success":true,"extras":{"data":{"fromId":["POS-4224-5765-8874-2104-2015"],"toId":["USR-7075-9608-7625-3467-2015"],"orderId":"QKXDH7N6DJ","content":"contenu message","type":"Order","status":"send","read":false,"datas":[{"key":"test","value":"values"}],"messageId":"W3PDH7N68J"}}}
+    √ POS send new thread/messageccon a ORDER 
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : Message
+[0mGET /api/user/searchMessages?key=1234567890 [32m200 [0m7.584 ms - 2182[0m
+************** [{"_id":"56cdcd0096010ee40a7c6db5","fromId":"USR-7072-8210-7757-2703-2015","toId":"POS-6914-0112-5370-6527-2015","orderId":"WK5Z5LL68C","content":"contenu message","messageId":"WKQZX9L68J","__v":0,"datas":[],"createDate":"2016-02-24T15:32:16.881Z","status":"send","type":"order"},{"_id":"56cdcd67361dc1f41bfe6808","fromId":"USR-4578-2127-6347-3552-2015","toId":"POS-4035-7950-2368-1585-2015","orderId":"WKXTB9LRDC","content":"contenu message","messageId":"W3QTMLL68C","__v":0,"datas":[],"createDate":"2016-02-24T15:33:59.642Z","status":"send","type":"order"},{"_id":"56cdd9ef944132941f790bd1","fromId":"USR-4117-4831-5104-0774-2015","toId":"POS-0197-6309-3928-3630-2015","orderId":"QK5JSB46DJ","content":"contenu message","read":false,"messageId":"WKQJAME68C","__v":0,"datas":[],"createDate":"2016-02-24T16:27:27.914Z","status":"send","type":"order"},{"_id":"56cdda48f0a982cc1f5deb80","fromId":"USR-4324-0426-1303-3581-2015","toId":"POS-6755-0352-2116-3265-2015","orderId":"QK5VGM468C","content":"contenu message","read":false,"messageId":"Q3QVGB4RDC","__v":0,"datas":[],"createDate":"2016-02-24T16:28:56.074Z","status":"send","type":"order"},{"_id":"56cdda48f0a982cc1f5deb81","fromId":"POS-6755-0352-2116-3265-2015","toId":"USR-4324-0426-1303-3581-2015","orderId":"QK5VGM468C","content":"contenu message","read":false,"messageId":"W3PTUM46DC","__v":0,"datas":[],"createDate":"2016-02-24T16:28:56.082Z","status":"send","type":"order"},{"_id":"56cdeb7ada7875d0217fb4a2","fromId":"USR-7075-9608-7625-3467-2015","toId":"POS-4224-5765-8874-2104-2015","orderId":"QKXDH7N6DJ","content":"contenu message","read":false,"messageId":"W3WD77N6DJ","__v":0,"datas":[{"key":"test","value":"values","_id":"56cdeb7ada7875d0217fb4a3"}],"createDate":"2016-02-24T17:42:18.816Z","status":"send","type":"order"},{"_id":"56cdeb7ada7875d0217fb4a4","fromId":"POS-4224-5765-8874-2104-2015","toId":"USR-7075-9608-7625-3467-2015","orderId":"QKXDH7N6DJ","content":"contenu message","read":false,"messageId":"W3PDH7N68J","__v":0,"datas":[{"key":"test","value":"values","_id":"56cdeb7ada7875d0217fb4a5"}],"createDate":"2016-02-24T17:42:18.825Z","status":"send","type":"order"}]
+    √ user get new thread/messageccon a ORDER from POS
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : BizData
+[0mGET /api/pos/addBizData?key=1234567890 [32m200 [0m6.535 ms - 260[0m
+************** {"posId":["POS-4224-5765-8874-2104-2015"],"content":{"data":"content"},"advertising":[{"key":"PUB1","value":{"data":"content"}}],"versionId":"0","type":"hrc","datas":[{"key":"test","value":"values"}],"bizDataId":"QK68772RDC"}
+    √ POS CREATE  business data
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : BizData
+>>>>>>>>>>>  updateBizDataPos DATA ==> {"criteria":{"posId":["POS-4224-5765-8874-2104-2015"]},"data":{"posId":["POS-4224-5765-8874-2104-2015"],"advertising":[{"key":"PUB1","value":{"data":"content  2"}}]}}
+>>>>>>>>>>>  updateBizDataPos DATA ==> {"success":true,"extras":{"data":{"_id":"56cdeb7ada7875d0217fb4a6","posId":"POS-4224-5765-8874-2104-2015","versionId":"0","bizDataId":"QK68772RDC","__v":0,"datas":[{"key":"test","value":"values","_id":"56cdeb7ada7875d0217fb4a7"}],"createDate":"2016-02-24T17:42:18.852Z","updateDate":"2016-02-24T17:42:18.852Z","type":"hrc","advertising":[{"key":"PUB1","value":{"data":"content"},"_id":"56cdeb7ada7875d0217fb4a8"}],"content":[{"_id":"56cdeb7ada7875d0217fb4a9"}]}}}
+[0mGET /api/pos/updateBizData?key=1234567890 [32m200 [0m6.714 ms - 463[0m
+    √ POS put advertising business data
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : BizData
+[0mGET /api/user/searchBizData?key=1234567890 [32m200 [0m11.841 ms - 3851[0m
+************** [{"_id":"56cde47a662ea750237cce2f","posId":"POS-0077-5360-5965-1298-2015","versionId":"0","bizDataId":"Q3R8H5NR8C","__v":0,"datas":[],"createDate":"2016-02-24T17:12:26.929Z","updateDate":"2016-02-24T17:12:26.929Z","type":"hrc","advertising":[{"key":"PUB1","value":{"data":"content"},"_id":"56cde47a662ea750237cce30"}],"content":[{"_id":"56cde47a662ea750237cce31"}]},{"_id":"56cde4cc9fc9368c13b92ff0","posId":"POS-6395-3547-9474-6199-2015","versionId":"0","bizDataId":"WKR43W2RDC","__v":0,"datas":[{"key":"test","value":"values","_id":"56cde4cc9fc9368c13b92ff1"}],"createDate":"2016-02-24T17:13:48.990Z","updateDate":"2016-02-24T17:13:48.990Z","type":"hrc","advertising":[{"key":"PUB1","value":{"data":"content"},"_id":"56cde4cc9fc9368c13b92ff2"}],"content":[{"_id":"56cde4cc9fc9368c13b92ff3"}]},{"_id":"56cde64b0b354d4c1fea1a79","posId":"POS-1468-7383-8089-7517-2015","versionId":"0","bizDataId":"QKPLGPNR8C","__v":0,"datas":[{"key":"test","value":"values","_id":"56cde64b0b354d4c1fea1a7a"}],"createDate":"2016-02-24T17:20:11.355Z","updateDate":"2016-02-24T17:20:11.355Z","type":"hrc","advertising":[{"key":"PUB1","value":{"data":"content"},"_id":"56cde64b0b354d4c1fea1a7b"}],"content":[{"_id":"56cde64b0b354d4c1fea1a7c"}]},{"_id":"56cde696c5783520080517d8","posId":"POS-4567-6747-7038-4361-2015","versionId":"0","bizDataId":"Q3RG9FN68J","__v":0,"datas":[{"key":"test","value":"values","_id":"56cde696c5783520080517d9"}],"createDate":"2016-02-24T17:21:26.742Z","updateDate":"2016-02-24T17:21:26.742Z","type":"hrc","advertising":[{"value":{"data":"content  2"},"key":"PUB1","_id":"56cde696c5783520080517dc"}],"content":[{"_id":"56cde696c5783520080517db"}]},{"_id":"56cde7731d08af3819a7bfd6","posId":"POS-7200-8414-0191-1425-2015","versionId":"0","bizDataId":"W3RWHR2RDJ","__v":0,"datas":[{"key":"test","value":"values","_id":"56cde7731d08af3819a7bfd7"}],"createDate":"2016-02-24T17:25:07.727Z","updateDate":"2016-02-24T17:25:07.727Z","type":"hrc","advertising":[{"value":{"data":"content  2"},"key":"PUB1","_id":"56cde7731d08af3819a7bfda"}],"content":[{"_id":"56cde7731d08af3819a7bfd9"}]},{"_id":"56cdea6c2fb0df042374a0f3","posId":"POS-3497-3406-8348-3313-2015","versionId":"0","bizDataId":"Q364BMN6DJ","__v":0,"datas":[{"key":"test","value":"values","_id":"56cdea6c2fb0df042374a0f4"}],"createDate":"2016-02-24T17:37:48.969Z","updateDate":"2016-02-24T17:37:48.969Z","type":"hrc","advertising":[{"value":{"data":"content  2"},"key":"PUB1","_id":"56cdea6c2fb0df042374a0f7"}],"content":[{"_id":"56cdea6c2fb0df042374a0f6"}]},{"_id":"56cdea9a477690ec05999b22","posId":"POS-8449-9288-3889-0916-2015","versionId":"0","bizDataId":"W3R89M26DC","__v":0,"datas":[{"key":"test","value":"values","_id":"56cdea9a477690ec05999b23"}],"createDate":"2016-02-24T17:38:34.866Z","updateDate":"2016-02-24T17:38:34.866Z","type":"hrc","advertising":[{"value":{"data":"content  2"},"key":"PUB1","_id":"56cdea9a477690ec05999b26"}],"content":[{"_id":"56cdea9a477690ec05999b25"}]},{"_id":"56cdeb53fd3dade42257811e","posId":"POS-2212-9312-8787-3708-2015","versionId":"0","bizDataId":"W36QVHNR8J","__v":0,"datas":[{"key":"test","value":"values","_id":"56cdeb53fd3dade42257811f"}],"createDate":"2016-02-24T17:41:39.805Z","updateDate":"2016-02-24T17:41:39.805Z","type":"hrc","advertising":[{"value":{"data":"content  2"},"key":"PUB1","_id":"56cdeb53fd3dade422578122"}],"content":[{"_id":"56cdeb53fd3dade422578121"}]},{"_id":"56cdeb7ada7875d0217fb4a6","posId":"POS-4224-5765-8874-2104-2015","versionId":"0","bizDataId":"QK68772RDC","__v":0,"datas":[{"key":"test","value":"values","_id":"56cdeb7ada7875d0217fb4a7"}],"createDate":"2016-02-24T17:42:18.852Z","updateDate":"2016-02-24T17:42:18.852Z","type":"hrc","advertising":[{"value":{"data":"content  2"},"key":"PUB1","_id":"56cdeb7ada7875d0217fb4aa"}],"content":[{"_id":"56cdeb7ada7875d0217fb4a9"}]}]
+    √ POS get  business data
+teardown suite user test Application
+start suite User test Application
+Initialization UserController
+[0mGET /api/user/unapplyMembership?key=1234567890 [32m200 [0m5.480 ms - 399[0m
+    √ user UN APPLY as member of POS
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : User
+[0mGET /api/user/remove?key=1234567890 [32m200 [0m2.619 ms - 37[0m
+    √ user remove tokenId & secretKey
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : Membership
+[0mGET /api/pos/removeAllMembership?key=1234567890 [32m200 [0m3.040 ms - 37[0m
+************** remove POS MEMBERSHIP  {"success":true,"extras":{"data":{}}}
+    √  remove POS MEMBERSHIP 
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : PosMembershipCard
+[0mGET /api/pos/removeCardTypePos?key=1234567890 [32m200 [0m2.272 ms - 37[0m
+************** remove POS CARDS {"success":true,"extras":{"data":{}}}
+    √  remove POS CARDS 
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : Pos
+[0mGET /api/pos/remove?key=1234567890 [32m200 [0m3.058 ms - 37[0m
+************** remove POS {"success":true,"extras":{"data":{}}}
+    √  remove POS  
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : Order
+[0mGET /api/user/removeOrders?key=1234567890 [32m200 [0m1.963 ms - 37[0m
+    √  remove all user order   
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : Message
+[0mGET /api/user/removeMessages?key=1234567890 [32m200 [0m2.431 ms - 37[0m
+    √  remove all POS  messsage   
+teardown suite user test Application
+start suite User test Application
+==> Initialization Data Controler  : Message
+[0mGET /api/user/removeMessages?key=1234567890 [32m200 [0m2.111 ms - 37[0m
+    √  remove all user messsage   
+teardown suite user test Application
+
+
+  37 passing (538ms)
+
